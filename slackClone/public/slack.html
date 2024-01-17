@@ -5,9 +5,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="namespaces">
-            <div class="namespace" ns="/wiki"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/103px-Wikipedia-logo-v2.svg.png"></div>
-            <div class="namespace" ns="/mozilla"><img src="https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png"></div>
-            <div class="namespace" ns="/linux"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"></div>
+            <!-- Populated from the socket server! -->
         </div>
         <div class="rooms">
             <div class="main-rooms">
@@ -31,7 +29,7 @@
         </div>
         <div class="chat-panel col">
             <div class="room-header row col-12">
-                <div class="col"><span class="curr-room-text">Current Room</span> <span class="curr-room-num-users">Users <span class="glyphicon glyphicon-user"></span></span></div>
+                <div class="col"><span class="curr-room-text">Current Room</span> <span class="curr-room-num-users">Users <span class="fa-solid fa-user"></span></span></div>
                 <div class="search">
                         <span class="glyphicon glyphicon-search"></span>
                     <input type="text" id="search-box" placeholder="Search" />
@@ -89,4 +87,7 @@
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
+<script src="/buildMessageHtml.js"></script>
+<script src="/joinRoom.js"></script>
+<script src="/joinNs.js"></script>
 <script src="/scripts.js"></script>
